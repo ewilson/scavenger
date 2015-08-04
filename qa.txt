@@ -1,0 +1,15 @@
+What is the first name of the creator of Python?|a3c4b614a1f072e0f968c2712a36323f
+What is the title given to the creator of Python?|df1053315f6017c59b9227cf340a401a
+___________ counts -- from "The Zen of Python"?|3790b93fb56fd98f6b6466512383724c
+What is the Most current release number for Python 2?|298f6b9b22faa2970a9603f427895524
+What is the full URL for Python 2 documentation?|3432ec76f72b211993c18fea8cc8f160
+What is the Cmdlet for renaming an item in Powershell?|7de4442739177d43622bcfb44df1a033
+What is 3/5 in Python 2?|cfcd208495d565ef66e7dff9f98764da
+What is the exponential operator in Python?|514faf5a71b4f0f67374c388f37aa0d7
+Give the last topic printed when you enter "help('topics')" from the Python interpreter|8ab3b19e134f01fbaf94b8e15f3df090
+How many keywords does Python 2.7 have?|c16a5320fa475530d9583c34fd356ef5
+What type of licence does Notepad++ use?|daf5353290c2fd97c3deb5963ce90e05
+What verse did Mr. Wilson quote today?|16a794a9cedcee98f453bc3bf8706796
+Command to find IP Address from command line?|23ee283a67346e48fc6ae675d8919995
+Use PowerShell's help to learn what "cp" does, and find the first three words of the Synopsis|2de362d90611472f64515973f6cedee5
+Convert from ASCII to characters: 72-69-76-80-33|eac29409efdc871088a8864d8f346c05
