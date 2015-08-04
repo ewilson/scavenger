@@ -3,8 +3,12 @@ import os
 from questions import Question
 from hashanswer import DELIM
 
-def list_unsolved_questions():
+def display_status():
     os.system('cls') if os.name == 'nt' else os.system('clear')
+    status_indicator = ['  ' if n in questions else '##' for n in range(15)]
+    print '|%s|' % '|'.join(status_indicator)
+
+def list_unsolved_questions():
     correct_answers = 15 - len(questions)
     question_limit = correct_answers + 2
     print '%d ANSWERS FOUND!\n' % correct_answers
@@ -30,6 +34,7 @@ def take_guess():
 
 def go():
     while questions:
+        display_status()
         list_unsolved_questions()
         take_guess()
     print 'Congratulations! You have completed the scavenger hunt!'
