@@ -5,13 +5,12 @@ from hashanswer import DELIM
 
 def display_status():
     os.system('cls') if os.name == 'nt' else os.system('clear')
-    status_indicator = ['  ' if n in questions else '##' for n in range(15)]
+    status_indicator = ['  ' if n in questions else '##' for n in range(TOTAL_Q)]
     print '|%s|' % '|'.join(status_indicator)
+    print '%d of %d ANSWERS FOUND\n' % (TOTAL_Q - len(questions), TOTAL_Q)
 
 def list_unsolved_questions():
-    correct_answers = 15 - len(questions)
-    question_limit = correct_answers + 2
-    print '%d ANSWERS FOUND!\n' % correct_answers
+    question_limit = TOTAL_Q - len(questions) + 2
     for i, k in enumerate(questions.keys()):
         if i >= question_limit:
             break
@@ -45,6 +44,7 @@ def load_questions(filename):
     return {i: Question(*line.split(DELIM)) for (i, line) in enumerate(qa)}
 
 questions = load_questions('qa.txt')
+TOTAL_Q = len(questions)
 
 if __name__ == '__main__':
     go()
