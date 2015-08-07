@@ -36,6 +36,7 @@ def take_guess(pid):
         if question.check(a):
             print 'That is correct!'
             del questions[q]
+            update.send_update(pid, [0 if n in questions else 1 for n in range(TOTAL_Q)])
         else:
             print '"%s" is incorrect for question %d' % (a, q)
     else:
