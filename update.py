@@ -2,7 +2,7 @@ import requests
 import json
 
 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
-base_url = "http://localhost:5000"
+base_url = "http://ec2-54-174-36-237.compute-1.amazonaws.com:5000"
 
 def send_name(name):
     url = "%s/player" % base_url

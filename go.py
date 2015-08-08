@@ -2,6 +2,7 @@ import os
 
 import requests
 import json
+from random import shuffle
 
 from questions import Question
 from hashanswer import DELIM
@@ -56,6 +57,7 @@ def go():
 def load_questions(filename):
     with open(filename) as f:
         qa = f.readlines()
+        shuffle(qa)
     return {i: Question(*line.split(DELIM)) for (i, line) in enumerate(qa)}
 
 questions = load_questions('qa.txt')
