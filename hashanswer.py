@@ -9,6 +9,7 @@ from hashlib import md5
 
 DELIM = "|"
 
+
 def main():
     filename = argv[1]
 
@@ -16,11 +17,12 @@ def main():
         plain = infile.readlines()
 
         split = [line.split(DELIM) for line in plain]
-        encoded = [DELIM.join([t[0],md5(t[1].lower().strip()).hexdigest()]) for t in split]
+        encoded = [DELIM.join([t[0], md5(t[1].lower().strip().encode()).hexdigest()]) for t in split]
 
         with open('qa.txt', 'w') as out:
             for line in encoded:
                 out.write("%s\n" % line)
+
 
 if __name__ == '__main__':
     main()
