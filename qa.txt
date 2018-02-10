@@ -1,5 +1,15 @@
-Test question A|8a8bb7cd343aa2ad99b7d762030857a2
-Test question B|fbfba2e45c2045dc5cab22a5afe83d9d
-Test question C|0a3d72134fb3d6c024db4c510bc1605b
-Test question D|ae11976937537e4c1206237dea035331
-Test question E|72baa9d520b127dd4ab03ff904cc1959
+Name of the python function for choosing a random integer|92adef0047664e476d106b4365ce7c91
+Number of the PEP that is the python style guide|c9f0f895fb98ab9159f51fd0297e236d
+Name of the built in python serialization module|dbc629890bc0cd17e1b4f49c8631ac9a
+Number of most recent python version -- e.g. 2.7.14|f56d3e84f8f4fb156548d390a8a85d8e
+Name of the program for updating python 2 code to python 3|847746fc536570ffdb0f5ab67a8e7b48
+Full URL for official python tutorial|e259bb2e683f383561858dc0c5c90b6d
+First name of Python’s BDFL|a3c4b614a1f072e0f968c2712a36323f
+What color is represented by the hex triplet #FF8800|fe01d67a002dfa0f3ac084298142eccd
+What is the IP address of localhost|f528764d624db129b32c21fbca0cb8d6
+What was the most common password used in 2017|e10adc3949ba59abbe56e057f20f883e
+What is the HTTP status code for an internal server error|cee631121c2ec9232f3a2f028ad5c89b
+Who invented the World Wide Web|f4d8b1b7f4e3ec7449822bd80ce61165
+What year was the first email sent|de73998802680548b916f1947ffbad76
+What is the type of the type of False in Python?|599dcce2998a6b40b1e38e8c6006cb0a
+How many built-in functions exist in Python|03afdbd66e7929b125f8597834fa83a4

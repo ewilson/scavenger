@@ -4,12 +4,6 @@ from random import shuffle
 
 from questions import Question
 from hashanswer import DELIM
-import update
-
-
-def take_name():
-    name = input("Please enter your name: \n")
-    return update.send_name(name)
 
 
 def display_status():
@@ -27,7 +21,7 @@ def list_unsolved_questions():
         print('%d) %s' % (k, questions[k].question))
 
 
-def take_guess(pid):
+def take_guess():
     q_raw = input('\nWhich question? ')
     if q_raw.isdigit() and int(q_raw) in questions:
         q = int(q_raw)
@@ -36,7 +30,6 @@ def take_guess(pid):
         if question.check(a):
             print('That is correct!')
             del questions[q]
-            update.send_update(pid, [0 if n in questions else 1 for n in range(TOTAL_Q)])
         else:
             print('"%s" is incorrect for question %d' % (a, q))
     else:
@@ -45,11 +38,10 @@ def take_guess(pid):
 
 
 def go():
-    pid = take_name()
     while questions:
         display_status()
         list_unsolved_questions()
-        take_guess(pid)
+        take_guess()
     print('Congratulations! You have completed the scavenger hunt!')
 
 
